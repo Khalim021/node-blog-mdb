@@ -1,0 +1,239 @@
+.main__content {
+   width: 100%;
+}
+
+/* detail style */
+.tesla {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tesla h3 {
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: orange;
+}
+
+.tesla img {
+    width: 100%;
+}
+
+.tesla .tesla__desc {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tesla .tesla__price {
+    margin: 10px;
+    font-size: 24px;
+}
+
+/* font styles */
+
+.main__title {
+    color: orange;
+    font-size: 24px;
+}
+
+/* login list style */
+
+.alert {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    background-color: steelblue;
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: #ffffff;
+}
+
+/* 404 */
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+			 font-size:80px;
+			 }
+			 
+			 .link_404{			 
+	color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;}
+	.contant_box_404{ margin-top:-50px;}
+
+/* home */
+
+.img-tran p {
+    align-self: center;
+    display: flex;
+    color: rgba(0, 0, 0, 0.85);
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    opacity: 0;
+    position: absolute;
+    width: 75%;
+    z-index: 0;
+  }
+  
+  .joke {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 15px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .learn-more-btn {
+    background-color: rgba(50, 125, 175, 0.75);
+    /* 
+    background-color: #2F91FB; 
+    border-radius: 25px;
+    */
+    border: none;
+    color: white;
+    font-size: 25px;
+    margin: 25px 0 75px;
+    padding: 10px 20px;
+  }
+  
+  /* ------- FOOTER ELEMENTS ------- */
+  footer {
+    display: block;
+    background-color: rgb(105, 105, 105);
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+  
+  .info-column {
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    text-align: left;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  li a {
+    letter-spacing: 0.05rem;
+    min-width: 90px;
+  }
+  
+  footer li:nth-child(1) {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  /* ------- IMAGES IN MAIN CONTENT ------- */
+  .gallery-container {
+    background-color: inherit;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 290px 1fr 290px;
+    margin: auto;
+    max-width: 1100px;
+    padding: 10px;
+  }
+  
+  .img__st {
+    max-height: 490px;
+    max-width: 500px;
+    object-fit: cover;
+    padding: 10px;
+  }
+  
+  .img-block-top,
+  .img-block-middle,
+  .img-block-bottom {
+    display: flex;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .img-tran {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    position: relative;
+  }
+  
+  .img-wrap {
+    max-height: 290px;
+    max-width: 580px;
+    width: 50%;
+  }
+  
+  .img-wrap-center {
+    width: 40%;
+  }
+  
+  .img-wrap-outer {
+    width: 30%;
+  }
+  
+  .top-img,
+  .bottom-img {
+    max-height: 290px;
+    max-width: 580px;
+    width: 100%;
+  }
+  
+  .center-img,
+  .outer-img {
+    width: 100%;
+  }
+  
+  main img:hover {
+    filter: blur(1.5px);
+    padding: 3px;
+  }
+  .img-tran:hover p {
+    opacity: 1;
+  }
+  
+  .img-tran * {
+    transition: all 0.45s ease;
+  }
+  
+  .img-tran:hover img {
+    opacity: 0.5;
+  }
+
+
+
+
+

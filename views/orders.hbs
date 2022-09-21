@@ -1,0 +1,27 @@
+<h3 class="mt-4 mb-3 main__title">ORDERS</h3>
+{{#if orders.length}}
+{{#each orders}}
+<div class="card border-secondary mb-3 w-100%">
+  <div class="card-header mb-3">Order ID: <i>{{_id}}</i></div>
+  <div class="card-header mb-3 date">Time: <i>{{date}}</i></div>
+  <div class="card-header">User Name: {{user.userId.name}} | <i>{{user.userId.email}}</i></div>
+  <div class="card-body">
+    <div class="card w-100%">
+      <ul class="list-group list-group-flush">
+        {{#each cars}}
+          <li class="list-group-item">{{car.title}} (x <b>{{count}}</b>)</li>
+        {{/each}}
+        <li class="list-group-item"><b>Total Price:</b> <span class="price">{{price}}</span></li>
+      </ul>
+    </div>
+    <button class="btn mt-5" style="width: 15%; background-color: orange;">Order</button>
+  </div>
+</div>
+{{/each}}
+
+{{else}}
+<p>Not Found Any Order</p>
+{{/if}}
+
+
+

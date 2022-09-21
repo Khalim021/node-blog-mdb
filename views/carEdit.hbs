@@ -1,0 +1,93 @@
+<h4 class="main__title mt-4">Edit {{tesla.title}} Details</h4>
+
+<form action="/cars/edit" method="post" class="mt-4 shadow p-3 mb-5 bg-body rounded" enctype="multipart/form-dataf">
+  <div class="form-floating mb-3">
+    <input 
+    type="text" 
+    class="form-control" 
+    id="title" name="title" 
+    placeholder="name..." required value="{{tesla.title}}">
+    <label for="title">Model</label>
+  </div>
+  <div class="row">
+    <div class="col form-floating mb-3">
+      <input 
+      type="number" 
+      class="form-control" 
+      id="teslaRange" 
+      placeholder="Range" 
+      value="{{tesla.teslaRange}}" 
+      required 
+      name="teslaRange">
+       <label for="teslaRange" class="ms-2">Range</label>
+    </div>
+    <div class="col form-floating mb-3">
+      <input 
+      type="number" 
+      class="form-control" 
+      id="peakPower" 
+      placeholder="Peak Power" 
+      value="{{tesla.peakPower}}" 
+      required 
+      name="peakPower">
+       <label for="peakPower" class="ms-2">Peak Power</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col form-floating mb-3">
+      <input 
+      type="text" 
+      class="form-control" 
+      id="awd" placeholder="Awd" 
+      value="{{tesla.awd}}" 
+      required name="awd">
+       <label for="awd" class="ms-2">AWD</label>
+    </div>
+    <div class="col form-floating mb-3">
+      <input 
+      type="number" 
+      class="form-control"
+      id="price" 
+      value="{{tesla.price}}" 
+      placeholder="Price" 
+      required name="price">
+       <label for="price" class="ms-2">Price</label>
+    </div>
+  </div>
+   <div class="form-floating mb-3">
+    <textarea 
+    class="form-control" 
+    placeholder="subtitle..." 
+    id="subtitle" value="{{tesla.subtitle}}" 
+    name="subtitle" style="height: 80px" 
+    required>
+    </textarea>
+    <label for="subtitle">Subtitle</label>
+  </div>
+  <div class="form-floating mb-3">
+    <textarea 
+    class="form-control" 
+    placeholder="description..." 
+    id="description" name="description" 
+    style="height: 100px" aria-valuetext="{{tesla.description}}" required></textarea>
+    <label for="description">Description</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" placeholder="image..." required id="image" name="image">
+    <label for="image">Image Url</label>
+  </div>
+  <input type="hidden" name="id" value="{{tesla.id}}" />
+  <button class="btn btn-secondary btn-lg" style="width: 15%; background-color: orange;">Edit Tesla</button>
+</form>
+
+<form action="/cars/remove" method="post">
+  <input type="hidden" name="id" value="{{tesla.id}}" />
+  <button class="btn btn-danger btn-lg mb-5" style="width: 15%;">Delete Tesla</button>
+</form>
+
+
+
+
+
+
+

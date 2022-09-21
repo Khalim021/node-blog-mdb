@@ -1,0 +1,39 @@
+<h4 class="mt-4 text-center" style="color: orange;">BASKET</h4>
+
+<div id="card">
+{{#if cars.length}}
+<table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each cars}}
+    <tr>
+      <td>{{title}}</td>
+      <td>{{count}}</td>
+      <td>
+        <button class="btn btn-danger count-remove" data-id="{{id}}">Delete</button>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+<p><b style="color: orange; font-size:24px ;">Price: </b><span class="price">{{price}}</span></p>
+
+<form action="/orders" method="post">
+  <button class="btn" style="background-color: orange;">Order</button>
+</form>
+
+{{else}}
+  <h4>Card is Empty</h4>
+{{/if}}
+</div>
+
+
+
+
+
